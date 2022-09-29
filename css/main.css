@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,7 +35,23 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
+  font-family: "Montserrat";
+  font-style: normal;
   margin: 0;
   height: 100vh;
   background: #fff;
@@ -50,9 +68,111 @@ body {
 }
 
 .container {
+  max-width: 1200px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.logo-img {
+  margin-right: 396px;
+}
+
+.navbar__list {
+  width: 744px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar__item-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+}
+.navbar__item-link:hover {
+  border-bottom: 2px solid #961914;
+}
+
+.for-bg {
+  background-image: url(../../imgs/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.hero-section {
+  margin-bottom: 180px;
+}
+
+.hero-info {
+  max-width: 490px;
+  margin-top: 130px;
+  position: relative;
+  background-image: url(../../imgs/hero-bg-mark.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: calc(50% - 181px);
+  background-position-x: calc(50% + 53px);
+  z-index: 10;
+}
+.hero-info__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.hero-info__text {
+  max-width: 370px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.hero-info__link {
+  padding: 13px 42px;
+  background-color: #961914;
+  color: #fff;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 225px;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+.hero-info__link:hover {
+  background: #75110d;
+}
+.hero-info__img {
+  position: absolute;
+  top: -50px;
+  right: -810px;
 }/*# sourceMappingURL=main.css.map */

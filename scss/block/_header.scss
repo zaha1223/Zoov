@@ -1,0 +1,24 @@
+.header-content {
+  @include flex;
+  padding: 10px 0;
+}
+.logo-img {
+  margin-right: 396px;
+}
+.navbar {
+  &__list {
+    width: 744px;
+    @include flex;
+    justify-content: space-between;
+  }
+  &__item-link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white;
+  }
+  &__item-link:hover {
+    border-bottom: 2px solid $maincolor;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin link {
+  padding: 13px 42px;
+  background-color: $maincolor;
+  color: #fff;
+  display: inline-block;
+  border-radius: 8px;
+}
+@mixin text-style {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
