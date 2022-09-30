@@ -76,14 +76,20 @@ body {
   padding-right: 20px;
 }
 
-.header-content {
+.site-header {
+  position: relative;
+}
+
+.header-block {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 16px 0;
+  width: 100%;
 }
 
 .logo-img {
@@ -113,14 +119,11 @@ body {
   border-bottom: 2px solid #961914;
 }
 
-.for-bg {
+.hero-section {
+  margin-bottom: 180px;
   background-image: url(../../imgs/hero-bg.png);
   background-repeat: no-repeat;
   background-position: top center;
-}
-
-.hero-section {
-  margin-bottom: 180px;
 }
 
 .hero-info {

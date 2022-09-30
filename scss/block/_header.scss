@@ -1,6 +1,11 @@
-.header-content {
+.site-header {
+  position: relative;
+}
+.header-block {
+  position: absolute;
   @include flex;
-  padding: 10px 0;
+  padding: 16px 0;
+  width: 100%;
 }
 .logo-img {
   margin-right: 396px;
